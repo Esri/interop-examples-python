@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnettoolfrompython", "dotnettoolfrompython.csproj", "{FEC1DC7B-E0D7-47E2-B01F-0481191080AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEC1DC7B-E0D7-47E2-B01F-0481191080AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC1DC7B-E0D7-47E2-B01F-0481191080AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC1DC7B-E0D7-47E2-B01F-0481191080AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC1DC7B-E0D7-47E2-B01F-0481191080AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

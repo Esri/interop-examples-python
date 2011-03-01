@@ -1,0 +1,6 @@
+glob:cplusplus\Debug\*
+glob:cplusplus\Release\*
+glob:*~
+glob:*.ncb
+glob:*.suo
+glob:*.user

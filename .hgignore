@@ -1,5 +1,7 @@
 glob:cplusplus\Debug\*
 glob:cplusplus\Release\*
+glob:dotnet\obj\*
+glob:dotnet\bin\*
 glob:*~
 glob:*.ncb
 glob:*.suo

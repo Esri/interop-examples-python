@@ -6,7 +6,7 @@
 extern "C"
 {
 
-  __declspec(dllexport) int AddAreaFieldToFeatureClass(const char* feature_class, const char* field_name)
+  __declspec(dllexport) int AddAreaFieldToFeatureClass(const wchar_t* feature_class, const wchar_t* field_name)
   {
 	  // Convert char*s to bstring
 	  _bstr_t catalogPath(feature_class),
@@ -38,7 +38,7 @@ extern "C"
 	  IGeometryPtr ipShape;
 
 	  // Open cursor on feature class
-	  ipFeatureclass->Search(ipFilter, VARIANT_FALSE, &ipCursor);
+	  ipFeatureclass->Update(ipFilter, VARIANT_FALSE, &ipCursor);
 
 	  // Iterate
 	  esriGeometryType gt;

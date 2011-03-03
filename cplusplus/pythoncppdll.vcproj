@@ -40,11 +40,13 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				AdditionalOptions="/clr"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\ArcGIS\com"
+				AdditionalIncludeDirectories="C:\ArcGIS\com;C:\Users\jaso5899\devsummit2011\dotnet\bin\Debug"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;PYTHONCPPDLL_EXPORTS"
 				MinimalRebuild="true"
-				BasicRuntimeChecks="3"
+				ExceptionHandling="2"
+				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
@@ -114,10 +116,12 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				AdditionalOptions="/clr"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="C:\ArcGIS\com"
+				AdditionalIncludeDirectories="C:\ArcGIS\com;C:\Users\jaso5899\devsummit2011\dotnet\bin\Debug"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;PYTHONCPPDLL_EXPORTS"
+				ExceptionHandling="2"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="2"

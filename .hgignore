@@ -6,3 +6,5 @@ glob:*~
 glob:*.ncb
 glob:*.suo
 glob:*.user
+glob:*.swp
+glob:*.dll

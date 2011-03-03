@@ -1,0 +1,74 @@
+Using Python to Glue it all Together
+
+Jason Scheirer
+Esri Developer Summit 2011
+
+--
+
+Source and Slides
+
+http://esriurl.com/devsummit2011hg (Mercurial!)
+
+--
+
+Agenda
+
+ - Geoprocessing tools from 30000 feet (validators, model builder, etc)
+ - Designing a tool to wrap something that's already there (subprocess use cases)
+ - Writing a tool in ArcObjects
+    - C++
+    - C#
+
+--
+
+Assumptions
+
+Designing and Building Geoprocessing Tools from the Ground Up
+Tuesday, March 8, 2011, 4:30pm-5:45pm, Primrose A (Palm Springs Convention Center)
+
+Python for Working with ArcGIS
+Wednesday, March 9, 2011, 10:30am-11:45am, Primrose A (Palm Springs Convention Center)
+Thursday, March 10, 2011, 1:30pm-2:45pm, Smoketree A - E (Palm Springs Convention Center)
+
+--
+
+Why write a Geoprocessing tool?
+
+ - Integration with ArcGIS
+ - Validation
+ - Layer of sanity checks/conversions
+
+--
+
+Subprocess
+
+ - Communicate via stdin/stdout/stderr
+
+--
+
+Calculate Area Field
+
+ - Two params:
+     - FeatureClass in
+     - New field name
+ - Behavior:
+     - Add field of type double to Feature Class
+     - Populate with area of shape for that record
+
+--
+
+Using Script Tools as Interop for ArcObjects
+
+--
+
+Why write a tool in ArcObjects?
+
+ - Familiarity
+ - Performance
+ - Customization
+
+--
+
+Questions?
+
+--

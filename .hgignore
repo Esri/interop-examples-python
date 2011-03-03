@@ -8,4 +8,5 @@ glob:*.suo
 glob:*.user
 glob:*.swp
 glob:*.dll
+glob:*.pdb
 glob:*.pyc

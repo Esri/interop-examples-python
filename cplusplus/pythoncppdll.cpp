@@ -24,9 +24,7 @@ extern "C"
 
 	  // Try to fetch feature class from catalog path
 	  if (FAILED(hr = ipUtil->OpenFeatureClassFromString(catalogPath, &ipFeatureclass)))
-	  {
 		  return -1;
-	  }
 
 	  // Field index of the field of interest
 	  long fieldIndex;
@@ -45,8 +43,8 @@ extern "C"
 	  // Iterate
 	  esriGeometryType gt;
 	  for (ipCursor->NextFeature(&ipRow);
-		   ipRow != NULL;
-		   ipCursor->NextFeature(&ipRow))
+		     ipRow != NULL;
+		     ipCursor->NextFeature(&ipRow))
 	  {
 		  // Get row's associated geometry
 		  ipRow->get_Shape(&ipShape);
@@ -75,9 +73,9 @@ extern "C"
 
   __declspec(dllexport) int AddAreaFieldToFeatureClassCSharp(const wchar_t* feature_class, const wchar_t* field_name)
   {
-    ExecuteTool et;
+    ExecuteTool dot_net_implementation_of_tool;
     System::String ^fc_string(gcnew System::String(feature_class)),
                    ^field_name_string(gcnew System::String(field_name));
-    return et.AddAreaFieldToFeatureClass(fc_string, field_name_string);
+    return dot_net_implementation_of_tool.AddAreaFieldToFeatureClass(fc_string, field_name_string);
   }
 }

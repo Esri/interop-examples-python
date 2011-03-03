@@ -28,7 +28,7 @@ def execute_tool(language):
     arcpy.AddField_management(featureclass_path, field_name, "DOUBLE", "#", "#", "#", "#", "NULLABLE", "NON_REQUIRED", "#")
 
     arcpy.AddMessage("Executing {0} function...".format(language))
-    returncode = cpp_implementation(featureclass_path, field_name)
+    returncode = fn(featureclass_path, field_name)
 
     if returncode == -1:
         arcpy.AddError("Error opening Feature Class")

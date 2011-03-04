@@ -32,7 +32,7 @@ Thursday, March 10, 2011, 1:30pm-2:45pm, Smoketree A - E (Palm Springs Conventio
 
 --
 
-Why write a Geoprocessing tool?
+Why Write a Geoprocessing Tool?
 
  - Integration with ArcGIS
  - Validation
@@ -40,9 +40,40 @@ Why write a Geoprocessing tool?
 
 --
 
+Script Tool Framework to the Rescue
+
+ - Easy design and organization of tools
+ - Can execute arbitrary .exe files
+ - Python
+
+--
+
 Subprocess
 
  - Communicate via stdin/stdout/stderr
+
+--
+
+Using Python Script Tools as Interop for ArcObjects
+
+--
+
+Why Write a Tool in ArcObjects?
+
+ - Familiarity
+ - Performance
+ - Customization
+
+--
+
+Why Not Just Do the Whole Tool in C++/C#?
+
+ - Development time
+ - Script tool wizard
+ - DLL/Typelib/Assembly registration
+ - Rapid prototyping
+     - Get it "good enough" in Python 
+     - Instrument and optimize away the bottlenecks
 
 --
 
@@ -57,18 +88,20 @@ Calculate Area Field
 
 --
 
-Using Script Tools as Interop for ArcObjects
+C++
+
+ - Actually not too hard (Smart Pointers are awesome)
+ - Easiest integration path, best bang for buck
 
 --
 
-Why write a tool in ArcObjects?
+C# (or any .Net language)
 
- - Familiarity
- - Performance
- - Customization
+ - Python for .Net: http://pythonnet.sourceforge.net/
+ - Or build on the C++ example
 
 --
 
-Questions?
+Questions
 
 --

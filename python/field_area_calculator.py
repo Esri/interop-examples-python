@@ -36,5 +36,9 @@ def execute_tool(language):
         arcpy.AddError("Field does not exist on Feature Class")
     elif returncode == -3:
         arcpy.AddError("Shape field is not Polygon")
-    else:
+    elif returncode == -4:
+        arcpy.AddError("Function Error")
+    elif returncode == 0:
         arcpy.AddMessage("Computed value")
+    else:
+        arcpy.AddError("Unknown failure")

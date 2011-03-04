@@ -44,13 +44,13 @@
 				Optimization="0"
 				AdditionalIncludeDirectories="C:\ArcGIS\com;C:\Users\jaso5899\devsummit2011\dotnet\bin\Debug"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;PYTHONCPPDLL_EXPORTS"
-				MinimalRebuild="true"
+				MinimalRebuild="false"
 				ExceptionHandling="2"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				DebugInformationFormat="4"
+				DebugInformationFormat="3"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"

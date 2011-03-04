@@ -10,7 +10,7 @@ extern "C"
 
   __declspec(dllexport) int AddAreaFieldToFeatureClassCPlusPlus(const wchar_t* feature_class, const wchar_t* field_name)
   {
-	  // Convert char*s to bstring
+	  // Convert wchar_t*s to bstring
 	  _bstr_t catalogPath(feature_class),
 	          newfieldname(field_name);
 
@@ -58,7 +58,7 @@ extern "C"
 		  ipArea->get_Area(&area);
 		  // Pop double into a variant
 		  VARIANT value;
-      ::VariantInit(&value);
+		  ::VariantInit(&value);
 		  value.vt = VT_R8;
 		  value.dblVal = area;
 		  // Set double variant onto target field

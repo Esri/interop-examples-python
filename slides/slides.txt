@@ -1,107 +1,74 @@
 Using Python to Glue it all Together
-
 Jason Scheirer
-Esri Developer Summit 2011
-
+2011 Developer Summit
 --
-
 Source and Slides
-
-http://esriurl.com/devsummit2011hg (Mercurial!)
-
+ - http://esriurl.com/devsummit2011hg
+ - Mercurial
 --
-
 Agenda
 
  - Geoprocessing tools from 30000 feet (validators, model builder, etc)
- - Designing a tool to wrap something that's already there (subprocess use cases)
- - Writing a tool in ArcObjects
-    - C++
-    - C#
-
+   - Designing a tool to wrap something that's already there (subprocess use cases)
+   - Writing a tool in ArcObjects
+     - C++
+     - C#
 --
-
 Assumptions
 
-Designing and Building Geoprocessing Tools from the Ground Up
-Tuesday, March 8, 2011, 4:30pm-5:45pm, Primrose A (Palm Springs Convention Center)
-
-Python for Working with ArcGIS
-Wednesday, March 9, 2011, 10:30am-11:45am, Primrose A (Palm Springs Convention Center)
-Thursday, March 10, 2011, 1:30pm-2:45pm, Smoketree A - E (Palm Springs Convention Center)
-
+ - Designing and Building Geoprocessing Tools from the Ground Up
+   - Tuesday, March 8, 2011, 4:30pm-5:45pm, Primrose A (Palm Springs Convention Center)
+ - Python for Working with ArcGIS
+   - Wednesday, March 9, 2011, 10:30am-11:45am, Primrose A (Palm Springs Convention Center)
+   - Thursday, March 10, 2011, 1:30pm-2:45pm, Smoketree A - E (Palm Springs Convention Center)
 --
-
 Why Write a Geoprocessing Tool?
 
  - Integration with ArcGIS
  - Validation
  - Layer of sanity checks/conversions
-
 --
-
 Script Tool Framework to the Rescue
 
  - Easy design and organization of tools
- - Can execute arbitrary .exe files
+ - Can execute arbitrary .exe and script files
  - Python
-
 --
-
 Subprocess
 
  - Communicate via stdin/stdout/stderr
-
+ - Using Python Script Tools as Interop for ArcObjects
 --
-
-Using Python Script Tools as Interop for ArcObjects
-
---
-
 Why Write a Tool in ArcObjects?
 
  - Familiarity
  - Performance
- - Customization
-
+ - Customization (something you can’t do)
 --
-
 Why Not Just Do the Whole Tool in C++/C#?
 
  - Development time
  - Script tool wizard
  - DLL/Typelib/Assembly registration
  - Rapid prototyping
-     - Get it "good enough" in Python 
-     - Instrument and optimize away the bottlenecks
-
+   - Get it "good enough" in Python 
+   - Instrument and optimize away the bottlenecks
 --
-
 Calculate Area Field
 
  - Two params:
-     - FeatureClass in
-     - New field name
+   - FeatureClass in
+   - New field name
  - Behavior:
-     - Add field of type double to Feature Class
-     - Populate with area of shape for that record
-
+   - Add field of type double to Feature Class
+   - Populate with area of shape for that record
 --
-
 C++
 
  - Actually not too hard (Smart Pointers are awesome)
  - Easiest integration path, best bang for buck
-
 --
-
 C# (or any .Net language)
-
- - Python for .Net: http://pythonnet.sourceforge.net/
+ - Python for .Net
+   - http://pythonnet.sourceforge.net/
  - Or build on the C++ example
-
---
-
-Questions
-
---

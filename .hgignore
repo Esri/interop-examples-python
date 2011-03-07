@@ -10,3 +10,4 @@ glob:*.swp
 glob:*.dll
 glob:*.pdb
 glob:*.pyc
+glob:python/RTools/ToolData/

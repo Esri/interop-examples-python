@@ -2,7 +2,7 @@
 
 The contents located here were used in the tech workshop named, "Using Python to Glue it all Together" presented at the 2011 Esri Developer Summit. The contents are code examples and slides demonstrating how to use Python as an interoperability layer, reducing development time over pure .NET or C++ implementations. Without Python, large amounts of C++ or .NET code often have to be written to provide flexible tools for data analysis or data management. The presentation and code examples demonstrate how to create geoprocessing tools using Python as a glue for C++ and .NET functions (using CType and Python .NET), and wrapping popular third-party software, such as R, using a subprocess.  
 
-![Team Python Logo](https://github.com/Esri/interop-examples-python/blob/hg/default/Python_Globe_Icon.png) 
+![Team Python Logo](https://github.com/Esri/interop-examples-python/blob/master/Python_Globe_Icon.png) 
 
 ## Features
 * Powerpoint slides

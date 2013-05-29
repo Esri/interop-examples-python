@@ -20,7 +20,7 @@ The contents located here were used in the tech workshop named, "Using Python to
 
 ## Resources
 
-* [ctypes � A foreign function library for Python](http://docs.python.org/2/library/ctypes.html)
+* [ctypes - A foreign function library for Python](http://docs.python.org/2/library/ctypes.html)
 * [comtypes - a pure Python, lightweight COM client and server framework, based on the ctypes Python FFI package](http://starship.python.net/crew/theller/comtypes/)
 * [R - a free software environment for statistical computing and graphics](http://www.r-project.org/)
 
